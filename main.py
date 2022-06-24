@@ -86,7 +86,7 @@ def openGUI(data, input):
 
     match version:
         case 1: data["settings"]["presses"] = 11
-        case 2: data["settings"]["presses"] = 15
+        case 2: data["settings"]["presses"] = 16
     input.seek(0)
     json.dump(data, input)
     input.truncate()
